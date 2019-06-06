@@ -75,6 +75,11 @@ body {
   cursor: pointer;
 }
 
+#username-error, #phone-error, #email-error {
+  font-family: 'Museo Sans Bold', sans-serif;
+  color: #000000;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 960px;
@@ -303,16 +308,23 @@ body {
   font-size: 16px;
 }
 
+.offer-form__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer-form__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .offer__input {
-  margin-bottom: 25px;
   width: 240px;
 }
 
-.offer__input:first-child {
-  margin-right: 10px;
-}
-
 .offer__button {
+  margin-top: 25px;
   padding: 26px 0;
   width: 100%;
   font-size: 16px;
@@ -348,8 +360,10 @@ body {
     background-size: cover;
   }
   .offer__input {
-    margin-bottom: 10px;
     width: 100%;
+  }
+  .offer__button {
+    margin-top: 10px;
   }
 }
 
@@ -569,7 +583,7 @@ body {
 }
 
 .brif-text__subtitle {
-  margin-bottom: 94px;
+  margin-bottom: 83px;
   font-size: 16px;
 }
 
@@ -612,11 +626,11 @@ body {
 
 .brif__input {
   width: 100%;
-  margin-bottom: 11px;
+  margin-top: 11px;
 }
 
 .brif__button {
-  margin-top: 18px;
+  margin-top: 29px;
   margin-bottom: 14px;
   width: 100%;
   height: 70px;
