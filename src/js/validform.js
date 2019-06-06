@@ -11,7 +11,8 @@ $(document).ready(function() {
 		messages: {
 	    username: {
 	    	required: "Заполните поле",
-	    	minlength: jQuery.validator.format("Минимальная длинна 2 символа"),
+	    	minlength: jQuery.validator.format("Минимум 2 символа"),
+	    	maxlength: jQuery.validator.format("Максимум 15 символов"),
 	    },
 	    phone: "Заполните поле",
 	  }
@@ -33,8 +34,8 @@ $(document).ready(function() {
 	  messages: {
 	    username: {
 	    	required: "Заполните поле",
-	    	minlength: jQuery.validator.format("Минимальная длинна 2 символа"),
-	    	maxlength: jQuery.validator.format("Максимальная длинна 15 символов"),
+	    	minlength: jQuery.validator.format("Минимум 2 символа"),
+	    	maxlength: jQuery.validator.format("Максимум 15 символов"),
 	    },
 	    phone: "Заполните поле",
 	    email: {
