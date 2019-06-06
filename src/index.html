@@ -86,9 +86,9 @@
 				<!-- /.offer__title -->
 				<p class="offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</p>
 				<!-- /.offer__subtitle -->
-				<form action="#" class="form offer__form">
-					<input type="text" class="input offer__input" placeholder="Ваше имя">
-					<input type="text" class="input offer__input" placeholder="Ваш телефон">
+				<form action="#" id="offerForm" class="form offer__form">
+					<input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+					<input type="text" name="phone" class="input offer__input inputphone" placeholder="Ваш телефон">
 					<button class="button offer__button">Получить бесплатный дизайн-проект</button>
 				</form>
 				<!-- /.form offer__form -->
@@ -240,9 +240,10 @@
 				<div class="brif-request">
 					<h3 class="brif-request__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
 					<p class="brif-request__subtitle">Для этого заполните форму ниже</p>
-					<form action="#" class="form brif__form">
-						<input type="text" class="input brif__input" placeholder="Ваше имя">
-						<input type="text" class="input brif__input" placeholder="Ваш телефон">
+					<form action="#" id="brifForm" class="form brif__form">
+						<input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+						<input type="text" name="phone" class="input brif__input inputphone" placeholder="Ваш телефон">
+						<input type="email" name="email" class="input brif__input" placeholder="Ваш e-mail">
 						<button class="button brif__button">Рассчитать стоимость</button>
 					</form>
 					<p class="brif-request__text">Мы перезвоним Вам в течение 60 секунд</p>
@@ -273,8 +274,12 @@
   <script src="js/modaljquery.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/portfolio-slider.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/validform.js"></script>
   <script src="js/wow.min.js"></script>
   <script>new WOW().init();</script>
+
 
 </body>
 </html>
